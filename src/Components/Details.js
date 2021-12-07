@@ -19,6 +19,7 @@ componentDidMount(){
   }
 
   render(){
+    console.log(this.props);
     const { imageApi } = this.state;
     return(
       <div className='bodyDetails'>

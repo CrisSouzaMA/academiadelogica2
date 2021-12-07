@@ -1,6 +1,6 @@
 import React from 'react';
 import StatusButt from '../Components/StatusButt';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { statusMessages } from '../Data/Data';
 
 class Home extends React.Component {
@@ -24,7 +24,10 @@ class Home extends React.Component {
       <div className='everyHome'>
         <h1 className='headHome'>Academia de Lógica - Parte 2</h1>
         <div className='inputHome'>
-          <label htmlFor='input-home'>
+          <label 
+          htmlFor='input-home'
+          >
+            Digite aqui
             <input
               id='input-home'
               value={ inputChange }
@@ -42,7 +45,6 @@ class Home extends React.Component {
               key={ value.status }
               status={ value.label }
               statusNumber={ value.status }
-            // handleClick={ this.handleClickImage}
             />
           </Link>
         )) }
